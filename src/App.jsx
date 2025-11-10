@@ -33,6 +33,7 @@ import TermsAndPrivacy from "./screens/Terms_And_Policy";
 import IncidentReport from "./screens/IncidentReport";
 import ChatSystem from "./screens/ChatSystem/ChatSystem"
 import OtpForm from "./screens/LoginScreen/OtpForm";
+import Assessment from "./screens/Assessment";
 
 const App = () => {
   const sound = new Audio(soundFile);
@@ -243,6 +244,10 @@ const App = () => {
             <Route
               path="/chats"
               element={user && isAdmin ? <ChatSystem /> : <Navigate to="/" />}
+            />
+             <Route
+              path="/assessment"
+              element={user && isAdmin ? <Assessment /> : <Navigate to="/" />}
             />
           </Routes>
         </div>

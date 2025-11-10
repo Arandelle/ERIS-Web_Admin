@@ -165,6 +165,12 @@ export const useSidebarData = [
       <icons.report className={`${style}`} />
     ),
     link: "/incident-report"
+  }, 
+  {
+    title: "Crud Practice",
+    icon: (
+      <icons.report className={`${style}`} />
+    ),
+    link: "/assessment"
   }
-
 ];
